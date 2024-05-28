@@ -21,7 +21,7 @@ const uploadSuccess = (result) => {
 import { userAvatarUpdateService } from '@/api/user.js'
 import { ElMessage } from 'element-plus'
 //头像修改
-const updateAvatar = async() => {
+const updateAvatar = async() => { 
     //调用接口
     let result = await userAvatarUpdateService(imgUrl.value);
     ElMessage.success(result.msg?result.msg:'修改成功')
